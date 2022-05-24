@@ -1,0 +1,92 @@
+<!DOCTYPE html> <!-- Diz que é uma página 'html', no caso versão 5 -->
+<html lang="pt-br"> <!-- Tag principal que fecha no final, onde o idioma é português do Brasil -->
+
+<head> <!-- Informações internas para que o código funcione, colocamos 'metadados' aqui -->
+    <meta charset="UTF-8"> <!-- Metadados para reconhecer funções | 'charset' Formato do teclado-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Configuração do navegador EDGE para não 
+                                                          dar erro de compatibilidade-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Deixar página responsiva à 
+                                                                           configurar a estrutura padrão -->
+    <title>Dragão Carteiro</title> <!--  Título da página -->
+
+    <!-- Se ficar amarelo, é um alerta, não erro. Acontece pq não terminamos ainda a configuração -->
+    <style>
+        h1{
+            color: brown;
+            margin-bottom: 15px;
+        }
+    </style>
+    <!-- .text significa classe e #text significa id, o terceiro método de estilizar por classe -->
+
+    <!-- Necessário para especificar o caminho da classe estilizadora '.css'-->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body style="background-color: #fccc84"> <!-- Corpo da página. Tudo feito aqui é visível para o usuário -->
+    <nav> <!-- Menuzinho | Tag Semântica (Arruma código) 
+            Barra de navegação (normalmente onde você coloca os links) -->
+        <div>
+            <img class="nav" src="assets/img/Dragonite circular icon.png" alt="Dragaozin" width="60px"
+            style="margin:0px">
+        </div>
+        <div class="divMargem">
+            <h2 style="margin-left: 5px; margin-right: 0px">Menu</h2>
+        </div>
+        <div>
+        <ul class="fontSize"> <!-- Lista não-ordenada | <ol> é ordenada por números -->
+            <a class="textmenu" href="skate.html">
+                <li>Vídeo Fofolete</li> <!-- Linha da lista -->
+            </a>
+
+            <a class="textmenu" href="contatos.html">
+                <li>Fale comigo</li> <!-- Linha da lista -->
+            </a>
+        </ul>
+       </div>
+    </nav>
+
+        <h1 style="color:brown ; font-family:'Courier New', Courier, monospace; padding: 10px" >
+        O Dragão Carteiro</h1> <!-- Texto maior e vai até o h6, que é pequeno-->
+
+        <div class="container" style="margin-left: 35px">
+            <div class="text" style="font-size: 17px">
+                <h2 class="h2Index">DESCRIÇÃO DO DRAGONITE</h2>
+
+            <!-- Chamando a classe 'text' que criamos lá em cima pra aí sim mudar ela -->
+           <p class="text" id="idteste" style="font-family: Arial, Helvetica, sans-serif">
+          <div>Vemos ao lado um dragão laranja, com asas azuis e de barriga cor de creme</div>  
+          <div>olhando o horizonte. Aparentemente ele também é carteiro visto pela sua bolsa</div>
+          <div>que está segurando, pronto para fazer seu trabalho como um bom pokémon.</div>
+          <br> 
+          <div>Sua tipagem é Dragão/Voador e muita gente enche o saco falando que Dragonair</div>
+          <div>não faz sentido virar um Dragonite. Até entendo, pô, mas não perguntei!</div>
+           </p>  <!-- Texto -->
+            <div class="divCenter">
+                <img class="imagemDragoniteNervouser" src="https://c.tenor.com/YJGdCl_vopgAAAAC/dragonite-pokemon.gif" 
+                alt="Dragonite-Nervouser" height="229px" width="265px">
+            </div>
+           </div>
+           <div class="imagemDragonite">
+        <img class="imgR" src="assets/img/dragonite.jpg" alt="Dragonite"> <!-- Imagem onde o 'alt' fica como o nome
+                                         dela | Crtl Espaço pra pegar algo entre as aspas do 'src' -->
+           </div>
+    </div>
+<hr>
+<footer style="font-family:'Courier New', Courier, monospace">
+    <nav class="nav"> <!-- Menuzinho -->
+        <h2 style="background-color: burlywood; color: brown">
+            Página feita por Rafael Ballabinute Balbino™</h2>
+        <div>
+            <a href = "https://www.linkedin.com/in/rafael-ballabinute-balbino">
+                <img height="60px" src="assets/img/logo linkedin.jpg">
+            </a>
+        </div>
+        <div>
+            <a href = "https://github.com/RafaelBalbino">
+                <img height="60px" width="170px" src="assets/img/github logo.png">
+            </a>
+        </div>
+    </nav>
+ </footer>
+</body>
+</html>
