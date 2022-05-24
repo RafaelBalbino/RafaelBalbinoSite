@@ -1,0 +1,111 @@
+/* Aqui podemos comentar assim */
+
+/* Anotações para lembrar:
+ *
+ * Para estilizar o site inteiro, faça *{}, em que '*' significa tudo */
+
+ /* Configurando a margem do corpo do site */
+ body{
+     margin: 0%;
+ }
+
+ .divCenter{
+    justify-content: center;
+    text-align: center;
+}
+
+.divMargem{
+    margin-left: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0%; /* Distância fora da estrutura do código, de um conteúdo pra outro */
+    padding: 0px; /* Distância dentro da estrutura do código, de uma tag da outra */
+    background-color: burlywood;
+}
+
+/* Configurando o id do primeiro teste apenas.
+ * Boas práticas é usar o 'id' apenas uma vez, já que geralmente vão
+ * achar que é só em um lugar que você está mudando. 
+ * Geralmente usamos 'classes' ao invés de 'id' */
+ #idteste{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Configurando o título */
+h1{
+    text-align: center;
+    color: brown;
+    margin: 0%;
+}
+
+h2{
+    text-align: center;
+}
+
+.h2Index{
+    color: black;
+}
+
+/* Configurando o texto falando do Dragonite carteiro */
+.text{
+    color: rgb(255, 115, 0);
+    font-size: 15;
+}
+
+.textmenu:hover{
+    color: rgb(0, 247, 255);
+}
+
+.ouca{
+    text-align: center;
+}
+
+a{
+    color: chocolate;
+    margin-left: 20px;
+}
+
+/* list-style 'none' tira as configurações padrão, tirando as bolinhas */
+ul{
+    text-align: center;
+    display: flex;
+    list-style: none;
+}
+
+.fontSize{
+    font-size: 20px;
+}
+
+.liF5{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    margin: 10px;
+}
+
+.imagemDragonite{
+    margin-left: 15px;
+    border-radius: 30%;
+}
+
+.imagemDragoniteNervouser{
+    justify-content: center;
+    align-items: center;
+}
+
+.imgR{
+    width: 100%;
+    height: 100%
+}
+
+.video{
+    display: flex;
+    justify-content: center; /* Pega a caixinha de vídeo inteiro, e coloca pro centro */
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Contatos</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body style="background-color: #fccc84">
+    <nav> <!-- Menuzinho -->
+        <div>
+            <img class="nav" src="assets/img/Dragonite circular icon.png" alt="Dragaozin" width="60px"
+            style="margin:5px">
+        </div>
+        <div class="divMargem">
+            <h2>Menu</h2>
+        </div>
+        <ul class="fontSize"> <!-- Lista não-ordenada | <ol> é ordenada por números -->
+            
+            <a class="textmenu" href="index.html"> <!--Caminho de link-->
+                <li>Home</li>
+            </a>
+
+            <a class="textmenu" href="skate.html">
+                <li>Vìdeo Fofolete</li> <!-- Linha da lista -->
+            </a>
+        </ul>
+    </nav>
+
+    <h2>FORMAS DE CONTATO</h2>
+    <div class="divCenter fontSize">
+        <a class="textmenu" href="https://github.com/RafaelBalbino"> <!--Caminho de link-->
+        Meu Github
+        </a>
+    
+        <a class="textmenu" href="https://www.linkedin.com/in/rafael-ballabinute-balbino">
+        Meu LinkedIn <!-- Linha da lista -->
+        </a>
+    </div>
+
+    <div class="divCenter">
+        <h2>Onde estudei e me formei como técnico de informática:</h2>
+        <div class="fontSize">
+            <p>ETEC Jorge Street | São Caetano do Sul - SP</p>
+        </div>
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.0582692745243!2d-46.58020948502089!3d-23.63808418464485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5cb6c8a3d8f1%3A0x6069569c3c0cc6c0!2sEscola%20T%C3%A9cnica%20Estadual%20-%20ETEC%20Jorge%20Street!5e0!3m2!1spt-BR!2sbr!4v1653015846331!5m2!1spt-BR!2sbr" 
+         width="550" height="375" style="border:0;" allowfullscreen="" 
+         loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapa" 
+         onmousemove="mapaZoom()" onmouseout="mapaNormal()">
+         <!-- 'onmousemove' é passar o mouse em cima | 'onmouseout' é o contrário -->
+        </iframe>
+    </div>
+    </div>
+    
+    
+    <div class="divCenter">
+        <h2>Quer entrar em contato por e-mail? Então insira seus dados abaixo!</h2>
+           <form class="fontSize">
+            <label for="nome">Nome:</label> <br>
+
+            <!-- Chamando o evento 'onkeyup' que é a função criada em 'script.js' -->
+            <input type="text" id="nome" value="" onkeyup="validarNome()"  
+            placeholder ="Seu nome aqui"> 
+            <!-- O for é para o input referenciar a label 'nome' -->
+
+            <div id="txtNome"></div>
+            <!-- Criada para manipular ela pra virar texto na função 'validarNome' -->
+
+            <br>
+            <label for="email">E-mail:</label> <br>
+            <input type="email" id="email" value="" placeholder="email@email.com" onkeyup="validarEmail()"> 
+            <!-- Já verifica se é e-mail válido ou não com a função 'validarEmail' ajudando nisso agora -->
+
+            <div id="txtEmail"></div>
+            <br>
+
+            <label for="assunto">Assunto:</label> <br>
+            <textarea name="assunto" id="assunto" cols="50" rows="10" onkeyup="validarAssunto()"></textarea> 
+            <div id="txtAssunto"></div>
+
+            <p class="fontSize">Clique abaixo para enviar o formulário (confia)</p>
+
+            <div class="divCenter">
+                <input style="font-style:italic" type="button" onclick="enviar()" value="ENVIAR">
+            </div>
+           </form>
+    </div>
+    <hr>
+     <footer style="font-family:'Courier New', Courier, monospace">
+        <nav class="nav">
+            <h2 style="background-color: burlywood; color: brown">
+                Página feita por Rafael Ballabinute Balbino™
+            </h2>
+            
+            <div>
+                <a href = "https://www.linkedin.com/in/rafael-ballabinute-balbino">
+                  <img height="60px" src="assets/img/logo linkedin.jpg">
+                </a>
+            </div>
+            <div>
+                <a href = "https://github.com/RafaelBalbino">
+                    <img height="60px" width="170px" src="assets/img/github logo.png">
+                </a>
+            </div>
+        </nav>
+     </footer>
+
+    <!-- Tem que chamar o arquivo externo 'script.js' no final do código -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
